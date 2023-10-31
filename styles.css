@@ -1,0 +1,46 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+a.estilizado {
+    /* Esto quita el subrayado */
+    text-decoration: none;
+    /* Cambia el color de la letra */
+    color: #333;
+    /* Aumenta el tamaño de letra  */
+    font-size: larger;
+}
+
+/* Esto se ocupara cuando el mouse sea pasado por arriba del elemento seleccionado */
+a.estilizado:hover {
+    opacity: 0.5;
+}
+
+.cuadro-imagen {
+    width: 100%;
+    background-color: #333;
+
+    /* Deja un espacio del contenedor al contenido (interno) */
+    padding: 10px;
+}
+
+img.encuadrado{
+    /* Al borde lo redondea */
+    border-radius: 10px;
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+footer.anclado {
+    /* Margen entre el elemento y lo que hay arriba */
+    margin-top: 100vh;
+    /* Ancho del elemento */
+    width: 100%;
+    /* Color de fondo */
+    background-color: chocolate;
+    /* Color de letras */
+    color: white;
+}

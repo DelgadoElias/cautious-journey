@@ -1,0 +1,5 @@
+
+/* El selector busca elementos de ul que tenga una clase llamada cuadrados */
+ul.cuadrados {
+    list-style-type: square;
+}

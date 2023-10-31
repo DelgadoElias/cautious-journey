@@ -1,0 +1,101 @@
+<!-- ESTO ES UN COMENTARIO -->
+<!DOCTYPE html>
+
+<!-- Etiqueta padre html -->
+<html lang="en">
+  <!-- Contenedor head - Etiqueta HTML que divide el encabezado -->
+  <!-- El encabezado guarda etiquetas "no visibles para el usuario" pero imporantes para el navegador -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Este es mi primer HTML</title>
+    <meta
+      name="description"
+      content="La descripcion completa de mi pagina web"
+    />
+  </head>
+  <!-- Contenedor body - Etiqueta HTML que divide el contenido -->
+  <!-- Contenido que sera visible en el navegador -->
+  <body>
+    <!-- Encabezado de nuestra pagina web, tambien podemos tener los titulos aca -->
+    <header>
+      <h1>Esto es un articulo sobre el clima</h1>
+      <h2>Los noticieros hablan mucho de esto</h2>
+      <p>Breve descripcion</p>
+      <!-- Imagenes, videos -->
+      <!-- Barra de navegacion se escribe con el contenedor nav -->
+      <nav>
+        <a href="contacto.html">Ir a pagina de contacto</a>
+      </nav>
+    </header>
+
+    <section>
+      <h3>Temas a tratar hoy</h3>
+      <ul>
+        <li>
+          <!-- Link o vinculo con ruta relativa -->
+          <a href="/clase-tres/listas.html">Listados</a>
+        </li>
+        <li>
+          <!-- Link o vinculo con ruta absoltua y target-->
+          <!-- El target _blank es para abrir el vinculo en una nueva pestaña -->
+          <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank"
+            >Vinculos absolutos, relativos y targe</a
+          >
+        </li>
+        <li>
+          <!-- Si pongo el mouse arriba, aparece el titulo -->
+          <a
+            href="https://www.w3schools.com/tags/tag_a.asp"
+            title="Esto es el titulo inicial"
+            class="estilizado"
+            >Esto es un vinculo estilizado</a
+          >
+        </li>
+        <li>
+          <a href="mailto:correocorreo@gmail.com">Enviar un correo de prueba</a>
+        </li>
+        <li>
+          <a href="#pie">Esto tiene un ancla en vez de un vinculo</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contenido principal de la pagina web, lo que queremos que el usuario tenga interes -->
+    <section>
+      <!-- h1, h2, h3, h4, h5, h6 -->
+      <!-- El h1 se usa solamente para los titulos muuy importantes - NORMALMENTE VEMOS MAXIMO UN h1 por SECTION o articulo -->
+      <article>
+        <p>
+          <!-- NOTA IMPORTANTE PARA GRABACION: Cuando dos tengamos dos <p> juntas, normalmente hablamos de una etiqueta <p> y una etiqueta <br> -->
+          <!-- SI NO TIENEN UN TITULO LLAMATIVO ENTRE EL MEDIO DE ALGUN PARRAFO, ES RECOMENDABLE MANEJAR EN UNA <p> -->
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo officia,
+          impedit unde velit, deleniti fugiat odit perferendis quisquam expedita
+          ab iusto ducimus quasi distinctio, cum quidem! A dicta quae
+          voluptatibus.
+          <br />
+          Quos error veniam excepturi ut, aspernatur delectus culpa quis
+          laboriosam quas reprehenderit consequatur rem porro. Temporibus error
+          dignissimos mollitia excepturi, alias repellendus at autem tempora
+          magni neque molestias, in eum.
+          <br />
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic harum,
+          nostrum quaerat esse sapiente, ipsum optio dicta minus nesciunt
+          deserunt quasi commodi, dolor similique! Atque nam mollitia
+          perspiciatis quod harum?
+        </p>
+      </article>
+    </section>
+    <div class="cuadro-imagen">
+      <img class="encuadrado" src="https://fffuel.co/images/dddepth/dddepth-353.jpg" alt="Imagen generada por IA">
+    </div>
+    <!-- Pie de pagina del documento HTML -->
+    <footer class="anclado" id="pie">
+      <h3>Esto es una pagina con un pie de pagina</h3>
+    </footer>
+  </body>
+</html>
+
+<!-- Afuera del <html> no deberia escribir nada -->
