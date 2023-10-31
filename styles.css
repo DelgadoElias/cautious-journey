@@ -1,46 +1,61 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+
+    /* Fuentes a utilizar */
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+
+  /* Ancho del 70% de la pantalla */
+  width: 70%;
+  /* Al colocar margenes automaticos hara que este elemento se centre al medio de su elemento padre */
+  margin: auto;
 }
 
 a.estilizado {
-    /* Esto quita el subrayado */
-    text-decoration: none;
-    /* Cambia el color de la letra */
-    color: #333;
-    /* Aumenta el tamaño de letra  */
-    font-size: larger;
+  /* Esto quita el subrayado */
+  text-decoration: none;
+  /* Cambia el color de la letra */
+  color: #333;
+  /* Aumenta el tamaño de letra  */
+  font-size: larger;
 }
 
 /* Esto se ocupara cuando el mouse sea pasado por arriba del elemento seleccionado */
 a.estilizado:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .cuadro-imagen {
-    width: 100%;
-    background-color: #333;
+  width: 100%;
+  /* Color de fondo */
+  background-color: #333;
 
-    /* Deja un espacio del contenedor al contenido (interno) */
-    padding: 10px;
+  /* Deja un espacio del contenedor al contenido (interno) */
+  padding: 10px;
 }
 
-img.encuadrado{
-    /* Al borde lo redondea */
-    border-radius: 10px;
-    width: 50%;
-    height: 500px;
-    object-fit: cover;
+img.encuadrado {
+  /* Al borde lo redondea */
+  border-radius: 10px;
 
+  /* Ancho alto correspondientes */
+  width: 50%;
+  height: 500px;
+
+  /* Para responsividad, vamos a darle anchos y altos minimos */
+  min-height: 100px;
+  min-height: 200px;
+
+  /* Esta propiedad indica como se va a comportar la imagen en el espacio que tiene */
+  object-fit: cover;
 }
 
 footer.anclado {
-    /* Margen entre el elemento y lo que hay arriba */
-    margin-top: 100vh;
-    /* Ancho del elemento */
-    width: 100%;
-    /* Color de fondo */
-    background-color: chocolate;
-    /* Color de letras */
-    color: white;
+  /* Margen entre el elemento y lo que hay arriba */
+  margin-top: 100vh;
+  /* Ancho del elemento */
+  width: 100%;
+  /* Color de fondo */
+  background-color: chocolate;
+  /* Color de letras */
+  color: white;
 }
