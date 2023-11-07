@@ -10,6 +10,77 @@ body {
   margin: auto;
 }
 
+/* 16px --> 
+2em = 32px 
+3em = 16px*3
+
+wdith: 4em; ---> 16px*4
+*/
+
+/* 14px
+
+2em = 28px 
+
+*/
+
+
+
+/* 
+
+em --> Multiplica valores default base por cada elemento
+
+p - 16px base   - 2em 16*2
+h1 - 32px base  - 2em 32*2
+h2 - 28px base
+h3 - 24px base
+h4 - 20px base
+
+div - 16px base
+html - 16px base
+
+rem --> Multiplica valores default del elemento HTML base
+
+p   - 16px base   - 2rem 16*2
+h1  - 32px base   - 2rem 16*2
+h2  - 28px base   - 2rem 16*2
+
+  
+*/
+
+.con-rem {
+  font-size: 1rem;
+}
+
+p.soyunaclase {
+  color: blue;
+  opacity: 0.5;
+}
+
+/* Elementos p con las clase "soyunaclase" que estn contenidos dentro de un elemento div */
+div p.soyunaclase {
+  font-size: 26px;
+}
+
+.texto-generico {
+  padding: 10px;
+  background-color: burlywood;
+  border-radius: 20px;
+  font-size: 20px !important;
+  margin-top: 20px;
+}
+
+.texto-mas-ancho {
+  font-size: 40px;
+  background-color: pink;
+}
+
+#estetextoesmasimportante{
+  font-weight: bold;
+  background-color: aquamarine;
+  padding: 40px;
+  color: red;
+}
+
 .colorcitos {
   background-color: #dec25a;
   margin: 20px;
@@ -52,6 +123,10 @@ a.estilizado:hover {
   color: red;
 }
 
+a.estilizado:focus {
+  color: blue;
+  opacity: 0.5;
+}
 .cuadro-imagen {
   width: 100%;
   /* Color de fondo */
@@ -92,7 +167,7 @@ img.encuadrado {
   height: 500px;
   background-image: url(https://www.publicdomainpictures.net/pictures/150000/nahled/wallpaper-07.jpg);
   background-repeat: no-repeat;
-  background-position: 10px 30px;
+  background-position: 40px 40px;
 }
 
 footer.anclado {
@@ -106,7 +181,7 @@ footer.anclado {
   color: white;
 }
 
-
+/* Clase generica */
 .border-example {
   width: 200px;
   height: 100px;
@@ -116,6 +191,19 @@ footer.anclado {
   text-align: center;
   font-size: 18px;
 }
+
+/* 
+
+Diferentes tipos de elementos:
+
+- Elementos en bloque: Los elementos que ocupan toda la linea completa, tomandose como una figura
+  Ocupan todo el ancho de ser necesario, y no permiten elementos al costado (excepciones con CSS)
+  Ejemplo: h1 al h6, p, section, contenedores 
+
+- Elementos en linea: Elementos que trabajan solamente con una pequeña porcion de la pantalla, solo la necesaria
+
+*/
+
 
 /* Borde sólido */
 .solid-border {
