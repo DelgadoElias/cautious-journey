@@ -1,6 +1,6 @@
 body {
 
-    /* Fuentes a utilizar */
+  /* Fuentes a utilizar */
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 
@@ -10,18 +10,46 @@ body {
   margin: auto;
 }
 
+.colorcitos {
+  background-color: #dec25a;
+  margin: 20px;
+}
+
+.em{
+  width: 30em;
+}
+.rem {
+  width: 30rem;
+}
+.px {
+  width: 30px;
+}
+.percentage {
+  width: 30%;
+}
+
+.cm {
+  width: 30cm;
+}
+
+a.pruebas-decoration {
+  text-decoration: line-through;
+}
+
 a.estilizado {
   /* Esto quita el subrayado */
-  text-decoration: none;
+  text-decoration: dotted;
   /* Cambia el color de la letra */
-  color: #333;
+  color: #dec25a;
   /* Aumenta el tamaño de letra  */
-  font-size: larger;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 /* Esto se ocupara cuando el mouse sea pasado por arriba del elemento seleccionado */
 a.estilizado:hover {
   opacity: 0.5;
+  color: red;
 }
 
 .cuadro-imagen {
@@ -29,8 +57,15 @@ a.estilizado:hover {
   /* Color de fondo */
   background-color: #333;
 
+  border-radius: 10px;
+
   /* Deja un espacio del contenedor al contenido (interno) */
   padding: 10px;
+}
+
+p.transformado {
+  text-transform: capitalize;
+  line-height: 40px;
 }
 
 img.encuadrado {
@@ -43,10 +78,21 @@ img.encuadrado {
 
   /* Para responsividad, vamos a darle anchos y altos minimos */
   min-height: 100px;
-  min-height: 200px;
+  min-width: 200px;
+
+  border: 5px dotted red;
 
   /* Esta propiedad indica como se va a comportar la imagen en el espacio que tiene */
   object-fit: cover;
+}
+
+.imagenizado {
+  width: 80%;
+  margin: auto;
+  height: 500px;
+  background-image: url(https://www.publicdomainpictures.net/pictures/150000/nahled/wallpaper-07.jpg);
+  background-repeat: no-repeat;
+  background-position: 10px 30px;
 }
 
 footer.anclado {
@@ -58,4 +104,55 @@ footer.anclado {
   background-color: chocolate;
   /* Color de letras */
   color: white;
+}
+
+
+.border-example {
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Borde sólido */
+.solid-border {
+  border: 5px solid red;
+}
+
+/* Borde punteado */
+.dotted-border {
+  border: 5px dotted blue;
+}
+
+/* Borde discontinuo */
+.dashed-border {
+  border: 5px dashed green;
+}
+
+/* Borde doble */
+.double-border {
+  border: 5px double purple;
+}
+
+/* Borde en relieve */
+.ridge-border {
+  border: 5px ridge orange;
+}
+
+/* Borde en grabado */
+.groove-border {
+  border: 5px groove brown;
+}
+
+/* Borde en línea */
+.inset-border {
+  border: 5px inset teal;
+}
+
+/* Borde en relieve */
+.outset-border {
+  border: 5px outset pink;
 }

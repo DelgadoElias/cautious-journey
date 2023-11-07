@@ -3,3 +3,27 @@
 ul.cuadrados {
     list-style-type: square;
 }
+
+/* A los elementos ordenados que tengan la clase estilizado, aplicale estas propiedades */
+ol.estilizado {
+    /* list-style-type --> Habla del tipo de viñeta que va a usar CSS para la lista */
+    list-style-type: upper-alpha;
+    /* upper-alpha  -> A,B,C,D */
+}
+
+ul.conImagen {
+    list-style-image: url(https://cdn-icons-png.flaticon.com/512/3004/3004112.png);
+}
+
+/* Selector de elemento */
+ul {
+    /* YO MODIFICO TODOS LOS UL */
+}
+
+.class {
+    /* YO MODIFICO CUALQUIER ELEMENTO QUE TENGA UNA CLASE ASI */
+}
+
+#porId {
+    /* YO MODIFICO EL ELEMENTO CON ID "porId"*/
+}

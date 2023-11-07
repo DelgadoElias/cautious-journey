@@ -1,4 +1,6 @@
 <!-- ESTO ES UN COMENTARIO -->
+
+<!-- Estamos ocupando HTML de ultima generacion (html5) -->
 <!DOCTYPE html>
 
 <!-- Etiqueta padre html -->
@@ -8,8 +10,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Link CSS proximamente -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link de CSS, la manera mas util y compacta de manejar estilos -->
+    <link rel="stylesheet" href="styles.css" />
     <title>Este es mi primer HTML</title>
     <meta
       name="description"
@@ -27,7 +36,9 @@
       <!-- Imagenes, videos -->
       <!-- Barra de navegacion se escribe con el contenedor nav -->
       <nav>
-        <a href="contacto.html">Ir a pagina de contacto</a>
+        <a class="pruebas-decoration" href="contacto.html"
+          >Ir a pagina de contacto</a
+        >
       </nav>
     </header>
 
@@ -39,10 +50,15 @@
           <a href="/clase-tres/listas.html">Listados</a>
         </li>
         <li>
-          <!-- Link o vinculo con ruta absoltua y target-->
-          <!-- El target _blank es para abrir el vinculo en una nueva pestaña -->
-          <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank"
-            >Vinculos absolutos, relativos y targe</a
+          <!-- Link o vinculo con ruta absoluta-->
+          <!-- Che, abri este link en esta ventana -->
+          <!-- target _self - Abro una pestaña donde estoy parado -->
+          <!-- target _blank - Abro una pestaña nueva -->
+          <a
+            href="https://www.microsoft.com/es-ar/"
+            title="Esto redirige a microsoft"
+            target="_blank"
+            >Vinculos absolutos, relativos y target</a
           >
         </li>
         <li>
@@ -68,7 +84,7 @@
       <!-- h1, h2, h3, h4, h5, h6 -->
       <!-- El h1 se usa solamente para los titulos muuy importantes - NORMALMENTE VEMOS MAXIMO UN h1 por SECTION o articulo -->
       <article>
-        <p>
+        <p class="transformado">
           <!-- NOTA IMPORTANTE PARA GRABACION: Cuando dos tengamos dos <p> juntas, normalmente hablamos de una etiqueta <p> y una etiqueta <br> -->
           <!-- SI NO TIENEN UN TITULO LLAMATIVO ENTRE EL MEDIO DE ALGUN PARRAFO, ES RECOMENDABLE MANEJAR EN UNA <p> -->
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo officia,
@@ -89,8 +105,20 @@
       </article>
     </section>
     <div class="cuadro-imagen">
-      <img class="encuadrado" src="https://fffuel.co/images/dddepth/dddepth-353.jpg" alt="Imagen generada por IA">
+      <img
+        class="encuadrado"
+        src="https://fffuel.co/images/dddepth/dddepth-353.jpg"
+        alt="Imagen generada por IA"
+      />
     </div>
+
+    <div class="imagenizado">ergergererg</div>
+
+    <!-- <div class="em colorcitos">e</div> -->
+    <!-- <div class="rem colorcitos">e</div> -->
+    <!-- <div class="px colorcitos">e</div> -->
+    <!-- <div class="percentage colorcitos">e</div> -->
+    <!-- <div class="cm colorcitos">e</div> -->
     <!-- Pie de pagina del documento HTML -->
     <footer class="anclado" id="pie">
       <h3>Esto es una pagina con un pie de pagina</h3>
